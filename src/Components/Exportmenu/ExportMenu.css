@@ -1,0 +1,54 @@
+.Exportmenu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Exportmenu h1{
+    color: black;
+    font-weight: 500;
+}
+.Exploremenutext{
+    max-width: 60%;
+    color: black;
+}
+.Exportmenutest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+}
+.Exportmenutest::-webkit-scrollbar{
+    display: none;
+}
+.Exploremenulistitem img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.Exploremenulistitem p{
+    margin-top: 10px;
+    color: black;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
+.Exportmenu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: rgb(37, 12, 12);
+    border: none;
+}
+.Exploremenulistitem .active{
+    border: 3px solid red ;
+    padding: 2px;
+}
+@media(max-width:1050){
+    .Exploremenutext{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
